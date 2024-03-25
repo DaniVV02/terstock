@@ -33,5 +33,5 @@ connection.end((err) => {
     return;
   }
 
-  console.log('Connexion à la base de données fermée.');
+  console.log('Connexion à la baseee de données fermée.');
 });
