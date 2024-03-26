@@ -20,7 +20,7 @@ connection.connect((err) => {
 });
 
 // Exécuter une requête SQL
-connection.query('SELECT * FROM ADRESSE', (err, rows) => {
+connection.query('DESCRIBE PRODUIT', (err, rows) => {
   if (err) throw err;
 
   console.log('Données récupérées de la base de données :', rows);
