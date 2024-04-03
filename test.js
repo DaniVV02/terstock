@@ -3,9 +3,9 @@ const mysql = require('mysql2');
 
 // Configuration de la connexion à la base de données
 const connection = mysql.createConnection({
-  host: 'localhost', // L'hôte de la base de données (par exemple, 'localhost' si la base de données est en local)
-  user: 'root', // Le nom d'utilisateur de la base de données
-  password: 'hai501', // Le mot de passe de la base de données
+  host: '172.20.10.4', // L'hôte de la base de données (par exemple, 'localhost' si la base de données est en local)
+  user: 'remote', // Le nom d'utilisateur de la base de données
+  password: 'farah', // Le mot de passe de la base de données
   database: 'stock' // Le nom de la base de données à laquelle se connecter
 });
 
@@ -35,3 +35,26 @@ connection.end((err) => {
 
   console.log('Connexion à la baseee de données fermée.');
 });
+
+
+/*
+const accountSid = 'ACb6a6e157a1e634ba21aec5ffa44aff21';
+const authToken = '[AuthToken]';
+const client = require('twilio')(accountSid, authToken);
+
+client.verify.v2.services("VA4bd5dd50300e4afbb66c3878083ac358")
+      .verifications
+      .create({to: '+330762677423', channel: 'sms'})
+      .then(verification => console.log(verification.sid));
+
+
+
+const accountSid = 'ACb6a6e157a1e634ba21aec5ffa44aff21';
+const authToken = '[AuthToken]';
+const client = require('twilio')(accountSid, authToken);
+
+client.verify.v2.services("VA4bd5dd50300e4afbb66c3878083ac358")
+      .verifications
+      .create({to: '+330762677423', channel: 'sms'})
+      .then(verification => console.log(verification.sid));
+      */
