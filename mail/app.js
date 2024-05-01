@@ -22,9 +22,10 @@ const transporter = nodemailer.createTransport({
 function envoyerEmail(otp) {
     const mailOptions = {
       from: '"HiveStock" <hivestock92@gmail.com>',
-      to: 'denil.bouafia@etu.umontpellier.fr',
-      subject: 'Votre OTP',
-      text: `Votre OTP est : ${otp}`
+      to: 'salhinina2002@gmail.com',
+      subject: 'Hive stock - Code OTP',
+      text: `Votre OTP est : ${otp}.\n
+      Saissez ce code pour vérifier votre compte`
     };
   
     transporter.sendMail(mailOptions, (error, info) => {
